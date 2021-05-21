@@ -41,9 +41,15 @@ python torch_onnx_tensorrt.py
 
 
 ## Run demo to infer 
-Ctdet```
+Ctdet
+```
 python demo.py
+
+
+```
 custom keypoint
+```
+
 python keypointDemo.py
 ```
 ___
