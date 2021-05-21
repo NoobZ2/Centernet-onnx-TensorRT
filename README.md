@@ -1,4 +1,4 @@
-## yolov5-onnx-tensorrt 
+## Centernet-onnx-tensorrt 
 This Repos contains how to run CenterNet model using TensorRT.  
 The Pytorch implementation is [xingyizhou/CenterNet ](https://github.com/xingyizhou/CenterNet).  
 Convert pytorch to onnx and tensorrt model to run on a Jetson AGX Xavier.  
@@ -29,8 +29,8 @@ Please use torch>=1.6.0 + onnx==1.8.0 + TensorRT >=6.0 to run the code
 - [x] run inference against input using tensorrt engine
 - [x] post process output (forward pass)
 - [x] apply nms thresholding on candidate boxes
-- [ ] visualize results
-- [ ] demo.py
+- [x] visualize results
+- [x] demo.py
 
 ___
 ## Compile pytorch model to onnx and onnx to tensorrt
@@ -41,9 +41,10 @@ python torch_onnx_tensorrt.py
 
 
 ## Run demo to infer 
-```
+#Ctdet```
 python demo.py
-
+#custom keypoint
+python keypointDemo.py
 ```
 ___
 
